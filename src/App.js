@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 
+function makeTable() {
+  const table = <table><tbody></tbody></table>;
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <table onClick={e => console.log(e)}>
+      <tbody>
+        <tr><td>_</td><td>_</td><td>_</td></tr>
+        <tr><td>_</td><td>_</td><td>_</td></tr>
+        <tr><td>_</td><td>_</td><td>_</td></tr>
+      </tbody>
+      </table>
+
     </div>
+    
   );
 }
 
